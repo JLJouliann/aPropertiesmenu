@@ -14,5 +14,16 @@ CREATE TABLE `user_parkings` (
   PRIMARY KEY (`id`)
 );
 
+CREATE TABLE `owned_vehicles` (
+	`owner` varchar(40) NOT NULL,
+	`plate` varchar(12) NOT NULL,
+	`vehicle` longtext,
+	`type` VARCHAR(20) NOT NULL DEFAULT 'car',
+	`job` VARCHAR(20) NULL DEFAULT NULL,
+	`stored` TINYINT NOT NULL DEFAULT '0',
+
+	PRIMARY KEY (`plate`)
+);
+
 ALTER TABLE `owned_vehicles` ADD COLUMN  `garageperso` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Garage Personnel' 
 AFTER `state` ;
