@@ -17,3 +17,5 @@ Aeroosh : https://github.com/Aeroosh
 esx_property : https://github.com/esx-framework/esx_property
 
 instance : https://github.com/esx-framework/instance
+
+esx_vehicleshop : https://github.com/esx-framework/esx_vehicleshop # Owned Vehicle
