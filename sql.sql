@@ -25,5 +25,7 @@ CREATE TABLE `owned_vehicles` (
 	PRIMARY KEY (`plate`)
 );
 
+ALTER TABLE `owned_vehicles` ADD `state` BOOLEAN NOT NULL DEFAULT FALSE COMMENT 'Etat de la voiture' AFTER `owner`;
+
 ALTER TABLE `owned_vehicles` ADD COLUMN  `garageperso` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Garage Personnel' 
 AFTER `state` ;
