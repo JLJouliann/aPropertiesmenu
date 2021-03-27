@@ -248,7 +248,6 @@ function openPropertiesMenu()
 							roommenu = json.encode(CoffreCoord)
 							ESX.ShowNotification('position du coffre :~b~'..CoffreCoord.x..' , '..CoffreCoord.y..' , '..CoffreCoord.z.. '')
 							inventoryVector = GetEntityCoords(PlayerPedId())
-							previewMarkers["dressingVector"] = {vector = dressingVector, color = {r = 0, g = 0, b = 255}}
 						end
 					end)
 					RageUI.Separator("")
