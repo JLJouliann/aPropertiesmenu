@@ -455,7 +455,7 @@ end
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-		if IsControlJustPressed(0,289) then
+		if IsControlJustPressed(0,289) then -- F2
 			openPropertiesMenu() 
             RageUI.IsVisible(RMenu:Get('menu', 'main'), not RageUI.IsVisible(RMenu:Get('menu', 'main')))
         end
