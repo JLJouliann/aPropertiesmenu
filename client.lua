@@ -463,7 +463,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterCommand("propertymenu", function ()
-		if ESX.PlayerData.job and ESX.PlayerData.job.name == 'police' then
+		if ESX.PlayerData.job and ESX.PlayerData.job.name == 'realesagent' then
 		openPropertiesMenu() 
 		RageUI.IsVisible(RMenu:Get('menu', 'main'), not RageUI.IsVisible(RMenu:Get('menu', 'main')))
 	end
